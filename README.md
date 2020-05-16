@@ -15,7 +15,6 @@ Notes inicials a tenir en compte:
 
 En aquesta implementació del joc connecta 4 l'usuari pot decidir en quin mode de joc jugar (random, greedy, smart). Ho decidirà abans de començar cada partida i podrà tornar-ho a escollir quan l'acabi.
 
-Un cop s'ha decidit quin mode de joc, el programa ens demana que entrem el nombre de files i columnes per al nostre tauler. El programa no acceptarà cap valor de files i columnes més petit que 4. Això es deu a que he pensat que no tenia sentit jugar al 4 en ratlla en un tauler més petit que 4x4. Tot hi aixi es podria haver implementat que com a minim o les files o les columnes haguessin de ser 4 ja que aixi segur que hi podria haver com a minim un quatre en ratlla (Ex tauler 4x1, 1x4). M'he decantat per la primera opció ja que faria el joc més divertit. 
 
 Per altre banda el limit superior a l'hora de determinar la grandaria del tauler és de 25, és a dir, no podrem jugar amb un tauler mes gran que 25x25. Ho he decidit aixi ja que el temps d'execució del programa amb un tauler molt gran excedeix la paciència del usuari.
 
@@ -67,14 +66,7 @@ Per últim retorno la posició (fil,col) on s'ha d'inserir la fitxa. Cal recorda
 Si en algun moment veu que l'usuari pot guanyar aquesta estratègia evitarà que el contrincant faci quatre en ratlla a la jugada següent. Tot hi aixi si es troba en la situació que detecta que l'usuari pot guanyar en la jugada següent pero ell pot guanyar en la jugada actual, anirà a guanyar.
 
 
--ESTRATÈGIA SMART:
 
-Aquesta estratègia s'implementa a la funció "smart".
-La meva idea principal era fer un min-max on es tirés a la columna on obtens una millor puntuació per a tu i la pitjor per a l'adversari. Degut a la falta de temps no he pugut implementar aquesta versió.
-
-La segona idea que tenia és la de millorar alguns aspectes del greedy. Per exemple si al fer una tirada es facilités el 4 en ratlla a l'adversari aquesta tirada no es fa, és a dir, evitar tirar en una casella on en la següent tirada l'adversari pot guanyar aprofitant la teva tirada. 
-
-Degut a la falta de temps no he implementat aquesta part.
 
 
 
